@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1635.0" style="-fx-background-color: #2d4059;" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AirLineBookingController">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.5, 0.5" layoutX="-1.0" layoutY="56.0" prefHeight="784.0" prefWidth="1635.0">
+         <items>
+            <ScrollPane fx:id="scrollPane" prefHeight="840.0" prefWidth="1599.0">
+               <content>
+                  <TableView fx:id="tableView" prefHeight="1086.0" prefWidth="1635.0">
+                    <columns>
+                      <TableColumn fx:id="col_id" prefWidth="70.0" text="ID" />
+                      <TableColumn fx:id="col_name" prefWidth="100.0" text="AirName" />
+                        <TableColumn fx:id="col_no" prefWidth="100.0" text="AirNo" />
+                        <TableColumn fx:id="col_from" prefWidth="150.0" text="From" />
+                        <TableColumn fx:id="col_to" prefWidth="150.0" text="To" />
+                        <TableColumn fx:id="col_date" prefWidth="150.0" text="DepatureDate" />
+                        <TableColumn fx:id="col_time" prefWidth="150.0" text="DepatureTime" />
+                        <TableColumn fx:id="col_arrivaltime" prefWidth="150.0" text="Arrival Time" />
+                        <TableColumn fx:id="col_price" prefWidth="100.0" text="Price" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <AnchorPane fx:id="ticketPane" prefHeight="840.0" prefWidth="534.0" style="-fx-background-color: #000000;">
+               <children>
+                  <JFXTextField fx:id="airnameField" focusColor="WHITE" labelFloat="true" layoutX="27.0" layoutY="103.0" prefHeight="48.0" prefWidth="231.0" promptText="AirName" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <Text fill="WHITE" layoutX="175.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Go Application">
+                     <font>
+                        <Font name="Arial Bold" size="27.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="toField" focusColor="WHITE" labelFloat="true" layoutX="300.0" layoutY="193.0" prefHeight="48.0" prefWidth="231.0" promptText="To" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fromField" focusColor="WHITE" labelFloat="true" layoutX="27.0" layoutY="193.0" prefHeight="48.0" prefWidth="231.0" promptText="From" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="airnoField" focusColor="WHITE" labelFloat="true" layoutX="300.0" layoutY="103.0" prefHeight="48.0" prefWidth="231.0" promptText="AirNo" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="seatbookingField" focusColor="WHITE" labelFloat="true" layoutX="27.0" layoutY="484.0" prefHeight="48.0" prefWidth="256.0" promptText="SeatBooking" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="totalamount" focusColor="WHITE" labelFloat="true" layoutX="310.0" layoutY="484.0" prefHeight="48.0" prefWidth="217.0" promptText="Total_Amount" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="dateField" focusColor="WHITE" labelFloat="true" layoutX="27.0" layoutY="292.0" prefHeight="48.0" prefWidth="231.0" promptText="Depature_Date" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="timeField" focusColor="WHITE" labelFloat="true" layoutX="303.0" layoutY="292.0" prefHeight="48.0" prefWidth="231.0" promptText="Depature_Time" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="btn_booking" layoutX="400.0" layoutY="705.0" onAction="#onBooking" style="-fx-background-color: #ffac41;" styleClass="main_button" text="Booking">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXTextField fx:id="customer_name" focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="592.0" prefHeight="48.0" prefWidth="237.0" promptText="Customer_Name" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="customer_phno" focusColor="WHITE" labelFloat="true" layoutX="285.0" layoutY="592.0" prefHeight="48.0" prefWidth="231.0" promptText="Customer_Phone" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="arrival_time" focusColor="WHITE" labelFloat="true" layoutX="27.0" layoutY="384.0" prefHeight="48.0" prefWidth="231.0" promptText="Arrival_Time" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="240.0" layoutY="705.0" onAction="#onCancel" prefHeight="50.0" prefWidth="127.0" style="-fx-background-color: #ffac41;" styleClass="main_button" text="Cancel">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <ScrollPane fx:id="seat_scrollPane" prefHeight="842.0" prefWidth="551.0">
+               <content>
+                  <HBox fx:id="hbox" prefHeight="835.0" prefWidth="1059.0" style="-fx-background-color: #e4fcf9;" />
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+      <JFXTextField fx:id="searchField" focusColor="#ff9000" layoutX="-1.0" prefHeight="39.0" prefWidth="231.0" promptText="Search" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" top="7.0" />
+         </padding>
+      </JFXTextField>
+      <DatePicker fx:id="searchDate" layoutX="252.0" layoutY="3.0" prefHeight="39.0" prefWidth="218.0" promptText="Search Depature_Date" />
+      <Label layoutX="1415.0" layoutY="6.0" prefHeight="42.0" prefWidth="210.0" text="AirLineBooking" textFill="#fff400">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+   </children>
+   
+</AnchorPane>

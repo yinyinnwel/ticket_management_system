@@ -1,0 +1,15 @@
+.main {
+-fx-background-color: #323232;
+}
+.main__left{
+   -fx-background-color: #000000;
+   -fx-border-color:#ffac41;
+   -fx-border-width:1px;
+}
+.main__left__button__bus{
+   -fx-border-color:#ffac41;
+   -fx-border-width:1px;
+}
+.main__left__button__bus:hover{
+   -fx-border-width:1px;
+}

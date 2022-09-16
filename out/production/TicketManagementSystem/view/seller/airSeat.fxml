@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="689.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AirLineSeatController">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="-1.0" layoutY="7.0" prefHeight="696.0" prefWidth="1272.0" style="-fx-background-color: #323232;">
+         <children>
+            <VBox fx:id="seat_box" layoutX="-4.0" prefHeight="696.0" prefWidth="583.0" style="-fx-background-color: gray;" />
+            <JFXButton fx:id="booking" buttonType="RAISED" layoutX="591.0" layoutY="265.0" prefHeight="45.0" prefWidth="107.0" style="-fx-background-color: green;" text="Booking" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="591.0" layoutY="364.0" prefHeight="48.0" prefWidth="107.0" style="-fx-background-color: green;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <AnchorPane fx:id="info_box" layoutX="721.0" layoutY="1.0" prefHeight="617.0" prefWidth="551.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <JFXTextField fx:id="air_name" focusColor="#ff1e56" layoutX="32.0" layoutY="78.0" prefHeight="44.0" prefWidth="225.0" promptText="AirName" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="air_no" focusColor="#ff1e56" layoutX="299.0" layoutY="78.0" promptText="AirNo" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="loc_from" focusColor="#ff1e56" layoutX="32.0" layoutY="166.0" promptText="From">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="loc_to" focusColor="#ff1e56" layoutX="299.0" layoutY="166.0" prefHeight="31.0" prefWidth="225.0" promptText="To" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="arrival_time" focusColor="#ff1e56" layoutX="32.0" layoutY="329.0" prefHeight="36.0" prefWidth="225.0" promptText="Arrival_Time" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="time" focusColor="#ff1e56" layoutX="299.0" layoutY="250.0" prefHeight="44.0" prefWidth="232.0" promptText="Time" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="date" focusColor="#ff1e56" layoutX="32.0" layoutY="250.0" prefHeight="31.0" prefWidth="225.0" promptText="Date" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="total_amt" focusColor="#ff1e56" layoutX="160.0" layoutY="413.0" prefHeight="31.0" prefWidth="232.0" promptText="Total Amount" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="phonenumber" focusColor="#ff1e56" layoutX="297.0" layoutY="552.0" prefHeight="44.0" prefWidth="216.0" promptText="Phone Number" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="username" focusColor="#ff1e56" layoutX="32.0" layoutY="552.0" prefHeight="31.0" prefWidth="196.0" promptText="UserName" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Text fx:id="logo" fill="#e80e0e" layoutX="150.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Go Application" textAlignment="CENTER" wrappingWidth="266.6708984375">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="seat_qty" focusColor="#ff1e56" layoutX="304.0" layoutY="329.0" prefHeight="36.0" prefWidth="225.0" promptText="Seat_Qty" unFocusColor="BLACK">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Text fx:id="notice" fill="#ee0707" layoutX="58.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notice: Luggage weight is 25kg." textAlignment="CENTER" wrappingWidth="410.6708984375">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="save" buttonType="RAISED" layoutX="957.0" layoutY="638.0" prefHeight="51.0" prefWidth="107.0" style="-fx-background-color: orange;" text="Save" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

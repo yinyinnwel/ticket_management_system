@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SellerLoginController">
+   <children>
+      <AnchorPane fx:id="mainPane" prefHeight="494.0" prefWidth="593.0" style="-fx-background-color: #0e153a;" stylesheets="@css/main.css">
+         <children>
+            <JFXPasswordField fx:id="passwordField" focusColor="WHITE" labelFloat="true" layoutX="215.0" layoutY="259.0" prefHeight="31.0" prefWidth="232.0" promptText="Password" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="usernameField" focusColor="WHITE" labelFloat="true" layoutX="215.0" layoutY="149.0" prefHeight="51.0" prefWidth="232.0" promptText="UserName" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="label" layoutX="199.0" layoutY="38.0" prefHeight="45.0" prefWidth="209.0" text="Seller Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="35.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_cancel" buttonType="RAISED" layoutX="152.0" layoutY="368.0" prefHeight="54.0" prefWidth="126.0" style="-fx-background-color: #fcffc1;" styleClass="main_button" text="Cancel">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btn_login" buttonType="RAISED" layoutX="331.0" layoutY="368.0" prefHeight="48.0" prefWidth="126.0" style="-fx-background-color: #9bcb3c;" styleClass="main_button" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="139.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="51.0" layoutX="139.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/password.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

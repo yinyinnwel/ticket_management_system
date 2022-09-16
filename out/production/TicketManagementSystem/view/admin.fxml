@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1240.0" styleClass="main" stylesheets="@css/admin.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+	<right>
+		<VBox prefHeight="658.0" prefWidth="201.0" styleClass="main__left" BorderPane.alignment="CENTER">
+			<children>
+				<AnchorPane onMouseClicked="#onBusLine">
+					<children>
+						<JFXButton fx:id="bus_btn" alignment="BOTTOM_CENTER" onMouseClicked="#onBusLine" prefHeight="119.0" prefWidth="199.0" styleClass="main__left__button__bus" text="BusLine" textFill="#ff1e56">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</JFXButton>
+						<FontAwesomeIconView fill="#ff1e56" glyphName="BUS" layoutX="85.0" layoutY="55.0" size="30" />
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</AnchorPane>
+				<AnchorPane layoutX="11.0" layoutY="11.0" onMouseClicked="#onAirLine">
+					<children>
+						<JFXButton fx:id="air_btn" alignment="BOTTOM_CENTER" onMouseClicked="#onAirLine" prefHeight="119.0" prefWidth="199.0" styleClass="main__left__button__bus" text="AirLine" textFill="#ff1e56">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</JFXButton>
+						<FontAwesomeIconView fill="#ff1e56" glyphName="PLANE" layoutX="84.0" layoutY="64.0" size="40" />
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</AnchorPane>
+				<AnchorPane layoutX="11.0" layoutY="130.0" onMouseClicked="#onSeller">
+					<children>
+						<JFXButton fx:id="seller_btn" alignment="BOTTOM_CENTER" onMouseClicked="#onSeller" prefHeight="119.0" prefWidth="199.0" styleClass="main__left__button__bus" text="Seller" textFill="#ff1e56">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</JFXButton>
+						<FontAwesomeIconView fill="#ff1e56" glyphName="KEY" layoutX="80.0" layoutY="61.0" size="40" />
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</AnchorPane>
+				<AnchorPane layoutX="11.0" layoutY="368.0" onMouseClicked="#onRegisterView">
+					<children>
+						<JFXButton fx:id="register_btn" alignment="BOTTOM_CENTER" onMouseClicked="#onRegisterView" prefHeight="120.0" prefWidth="199.0" styleClass="main__left__button__bus" text="Register View" textFill="#ff1e56">
+							<font>
+								<Font name="System Bold" size="24.0" />
+							</font>
+						</JFXButton>
+						<FontAwesomeIconView fill="#ff1e56" glyphName="LIST" layoutX="80.0" layoutY="61.0" size="40" text="" />
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</AnchorPane>
+				<AnchorPane layoutX="11.0" layoutY="249.0" onMouseClicked="#onLogout">
+					<children>
+						<JFXButton fx:id="logout" alignment="BOTTOM_CENTER" onMouseClicked="#onLogout" prefHeight="120.0" prefWidth="199.0" styleClass="main__left__button__bus" text="Logout" textFill="#ff1e56">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</JFXButton>
+						<FontAwesomeIconView fill="#ff1e56" glyphName="LIST" layoutX="80.0" layoutY="61.0" size="40" text="" />
+						<FontAwesomeIconView fill="#ff1e56" glyphName="POWER_OFF" layoutX="77.0" layoutY="60.0" size="40" />
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</AnchorPane>
+			</children>
+		</VBox>
+	</right>
+</BorderPane>

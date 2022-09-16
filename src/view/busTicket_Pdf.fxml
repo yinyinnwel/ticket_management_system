@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="861.0" style="-fx-background-color: #e8ffe8;" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BusTicketFrameController">
+   <children>
+      <AnchorPane fx:id="ticketPane" prefHeight="658.0" prefWidth="861.0" style="-fx-background-color: #d5e8ff;">
+         <children>
+            <Text layoutX="259.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go Go Application" textAlignment="CENTER" wrappingWidth="256.6708984375">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BusName:" wrappingWidth="129.6709005832672">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="459.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BusNo:" wrappingWidth="129.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:" wrappingWidth="129.6709005832672">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="461.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" wrappingWidth="108.67090094089508">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="453.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Depature Time:" wrappingWidth="179.9999978095293">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Depature Date:" wrappingWidth="180.00000393390656">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="236.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SeatBooking:" wrappingWidth="151.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="397.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount:" wrappingWidth="167.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CustomerName:" wrappingWidth="180.00000393390656">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="430.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer'sPhone:" wrappingWidth="226.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="452.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment:" wrappingWidth="108.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="459.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refund:" wrappingWidth="94.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Label fx:id="busname" layoutX="162.0" layoutY="79.0" prefHeight="48.0" prefWidth="215.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" layoutX="631.0" layoutY="193.0" prefHeight="48.0" prefWidth="205.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="209.0" layoutY="193.0" prefHeight="48.0" prefWidth="205.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatbooking" layoutX="388.0" layoutY="255.0" prefHeight="48.0" prefWidth="453.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="c_phone" layoutX="641.0" layoutY="324.0" prefHeight="48.0" prefWidth="205.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="c_name" layoutX="227.0" layoutY="324.0" prefHeight="48.0" prefWidth="196.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="from" layoutX="157.0" layoutY="134.0" prefHeight="48.0" prefWidth="205.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="busno" layoutX="555.0" layoutY="79.0" prefHeight="48.0" prefWidth="227.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="to" layoutX="553.0" layoutY="134.0" prefHeight="48.0" prefWidth="227.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="total_amount" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="556.0" layoutY="451.0" prefHeight="48.0" prefWidth="276.0" text="0.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="refund" alignment="CENTER_RIGHT" layoutX="556.0" layoutY="557.0" prefHeight="48.0" prefWidth="276.0" text="0.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="payment" alignment="CENTER_RIGHT" layoutX="553.0" layoutY="501.0" prefHeight="48.0" prefWidth="282.0" text="0.0">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

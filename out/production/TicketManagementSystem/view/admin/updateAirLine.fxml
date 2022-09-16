@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateAirLineController">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="-8.0" layoutY="-12.0" prefHeight="505.0" prefWidth="735.0" style="-fx-background-color: #323232;">
+         <children>
+            <JFXButton fx:id="update" buttonType="RAISED" layoutX="204.0" layoutY="429.0" prefHeight="49.0" prefWidth="111.0" style="-fx-background-color: orange;" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="356.0" layoutY="429.0" prefHeight="49.0" prefWidth="111.0" style="-fx-background-color: orange;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="air_name" focusColor="#ffac41" layoutX="74.0" layoutY="72.0" promptText="AirName" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="air_no" focusColor="#ffac41" layoutX="74.0" layoutY="138.0" promptText="AirNo" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="price" focusColor="#ffac41" layoutX="368.0" layoutY="337.0" prefHeight="44.0" prefWidth="225.0" promptText="Seat_Price" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="loc_from" focusColor="#ffac41" layoutX="74.0" layoutY="204.0" prefHeight="41.0" prefWidth="225.0" promptText="From" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="loc_to" focusColor="#ffac41" layoutX="74.0" layoutY="264.0" prefHeight="41.0" prefWidth="225.0" promptText="TO" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="aampm" focusColor="#ffac41" layoutX="608.0" layoutY="128.0" prefHeight="41.0" prefWidth="99.0" promptText="AM/PM" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="sampm" focusColor="#ffac41" layoutX="608.0" layoutY="62.0" prefHeight="41.0" prefWidth="99.0" promptText="AM/PM" unFocusColor="WHITE" />
+            <JFXDatePicker fx:id="date" defaultColor="#ffac41" layoutX="74.0" layoutY="337.0" prefHeight="31.0" prefWidth="225.0" promptText="Date" />
+            <JFXTimePicker fx:id="stime" defaultColor="#ffac41" layoutX="368.0" layoutY="69.0" prefHeight="41.0" prefWidth="205.0" promptText="Departure_time" />
+            <JFXTimePicker fx:id="atime" defaultColor="#ffac41" layoutX="368.0" layoutY="135.0" prefHeight="41.0" prefWidth="205.0" promptText="Arrival_Time" />
+            <JFXTextField fx:id="seat_col" focusColor="#ffac41" layoutX="368.0" layoutY="276.0" promptText="Seat_Col" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="seat_qty" focusColor="#ffac41" layoutX="368.0" layoutY="203.0" promptText="Seat_Qty" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

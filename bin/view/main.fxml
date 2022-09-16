@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="499.0" prefWidth="681.0" style="-fx-background-color: #2d4059;" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainScreenViewController">
+   <children>
+      <Label fx:id="label" alignment="CENTER" layoutX="24.0" layoutY="25.0" prefHeight="86.0" prefWidth="648.0" styleClass="main_color" text="Transportation Ticket Management System" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <AnchorPane fx:id="admin" layoutX="229.0" layoutY="120.0" prefHeight="116.0" prefWidth="210.0" style="-fx-border-color: skyblue;">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="88.0" layoutX="70.0" layoutY="14.0">
+               <image>
+                  <Image url="@images/admin.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="81.0" prefHeight="35.0" prefWidth="131.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="main_button" />
+            <String fx:value="button_color" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane fx:id="seller" layoutX="229.0" layoutY="282.0" prefHeight="116.0" prefWidth="210.0" style="-fx-border-color: skyblue;">
+         <children>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="81.0" prefHeight="35.0" prefWidth="131.0" text="Seller" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="67.0" layoutX="72.0" layoutY="14.0">
+               <image>
+                  <Image url="@images/seller.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="main_button" />
+            <String fx:value="button_color" />
+         </styleClass>
+      </AnchorPane>
+      <JFXButton fx:id="btn_exit" buttonType="RAISED" layoutX="563.0" layoutY="423.0" prefHeight="62.0" prefWidth="104.0" style="-fx-background-color: red;" text="Exit" textFill="#ffe6e6" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="563.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="423.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="main_button" />
+            <String fx:value="button_color2" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>

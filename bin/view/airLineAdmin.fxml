@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1635.0" style="-fx-background-color: #071c21;" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AirLineAdminController">
+   <children>
+      <HBox prefHeight="68.0" prefWidth="1250.0">
+         <children>
+            <JFXTextField fx:id="searchField" focusColor="#ffac41" prefHeight="54.0" prefWidth="244.0" promptText="Search" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="7.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <DatePicker fx:id="searchDate" prefHeight="55.0" prefWidth="212.0" promptText="Search Date">
+               <HBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollPane" layoutX="538.0" layoutY="66.0" prefHeight="773.0" prefWidth="1098.0">
+         <content>
+            <TableView fx:id="tableView" prefHeight="1067.0" prefWidth="1386.0">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="70.0" text="ID" />
+                <TableColumn fx:id="col_name" prefWidth="100.0" text="AirName" />
+                  <TableColumn fx:id="col_no" prefWidth="100.0" text="AirNo" />
+                  <TableColumn fx:id="col_from" prefWidth="100.0" text="From" />
+                  <TableColumn fx:id="col_to" prefWidth="100.0" text="To" />
+                  <TableColumn fx:id="col_date" prefWidth="100.0" text="DepatureDate" />
+                  <TableColumn fx:id="col_time" prefWidth="100.0" text="DepatureTime" />
+                  <TableColumn fx:id="col_arrivaltime" prefWidth="100.0" text="ArrivalTime" />
+                  <TableColumn fx:id="col_seatqty" text="Seat_Qty" />
+                  <TableColumn fx:id="col_seatcolumn" prefWidth="70.0" text="Seat_Column" />
+                  <TableColumn fx:id="col_price" prefWidth="100.0" text="Price" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <JFXTextField fx:id="airnameField" focusColor="#0bc3e0" labelFloat="true" layoutX="24.0" layoutY="163.0" prefHeight="48.0" prefWidth="214.0" promptText="Air Name" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="airnoField" focusColor="#0bc3e0" labelFloat="true" layoutX="281.0" layoutY="163.0" prefHeight="31.0" prefWidth="205.0" promptText="Air No" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="loc_from" focusColor="#0bc3e0" labelFloat="true" layoutX="22.0" layoutY="253.0" prefHeight="31.0" prefWidth="214.0" promptText="From" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="loc_to" focusColor="#0bc3e0" labelFloat="true" layoutX="281.0" layoutY="253.0" prefHeight="31.0" prefWidth="205.0" promptText="To" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="seat_qtyField" focusColor="#0bc3e0" labelFloat="true" layoutX="23.0" layoutY="513.0" prefHeight="31.0" prefWidth="214.0" promptText="Seat_Qty" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="seat_colField" focusColor="#0bc3e0" labelFloat="true" layoutX="285.0" layoutY="513.0" prefHeight="48.0" prefWidth="198.0" promptText="Seat_Column" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="priceField" focusColor="#0bc3e0" labelFloat="true" layoutX="22.0" layoutY="616.0" prefHeight="48.0" prefWidth="214.0" promptText="Price" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <Text fill="#0bc3e0" fontSmoothingType="LCD" layoutX="176.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Air Line" textAlignment="CENTER" wrappingWidth="167.6708984375">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btn_add" buttonType="RAISED" layoutX="22.0" layoutY="761.0" prefHeight="51.0" prefWidth="132.0" style="-fx-background-color: yellowgreen;" styleClass="main_button" text="Add" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btn_update" buttonType="RAISED" layoutX="194.0" layoutY="761.0" prefHeight="51.0" prefWidth="132.0" style="-fx-background-color: #0bc3e0;" styleClass="main_button" text="Update" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_delete" buttonType="RAISED" layoutX="368.0" layoutY="761.0" prefHeight="51.0" prefWidth="132.0" style="-fx-background-color: red;" styleClass="main_button" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXDatePicker fx:id="datepicker" defaultColor="#0bc3e0" layoutX="33.0" layoutY="351.0" prefHeight="43.0" prefWidth="205.0" promptText="Depature_Date" style="-fx-text-inner-color: white;" />
+      <JFXTimePicker fx:id="timepicker" defaultColor="#0bc3e0" layoutX="27.0" layoutY="423.0" prefHeight="48.0" prefWidth="205.0" promptText="Depature_Time" style="-fx-text-inner-color: white;" />
+      <JFXTimePicker fx:id="arrival_time" defaultColor="#0bc3e0" layoutX="281.0" layoutY="423.0" prefHeight="48.0" prefWidth="205.0" promptText="Arrival_Time" style="-fx-text-inner-color: white;" />
+   </children>
+</AnchorPane>

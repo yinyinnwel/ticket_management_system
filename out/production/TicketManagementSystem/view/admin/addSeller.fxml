@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.AddSellerController">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="1.0" layoutY="-17.0" prefHeight="415.0" prefWidth="608.0" style="-fx-background-color: #323232;">
+         <children>
+            <JFXButton fx:id="add" buttonType="RAISED" layoutX="163.0" layoutY="341.0" prefHeight="42.0" prefWidth="98.0" style="-fx-background-color: orange;" text="Add" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="305.0" layoutY="341.0" style="-fx-background-color: orange;" text="Cancel" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="phone" focusColor="#ffac41" layoutX="346.0" layoutY="85.0" prefHeight="48.0" prefWidth="208.0" promptText="Phone Number" unFocusColor="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="name" focusColor="#ffac41" layoutX="43.0" layoutY="85.0" prefHeight="48.0" prefWidth="208.0" promptText="Seller Name" unFocusColor="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nrc" focusColor="#ffac41" layoutX="59.0" layoutY="245.0" prefHeight="31.0" prefWidth="208.0" promptText="NRC" unFocusColor="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="password" focusColor="#ffac41" layoutX="346.0" layoutY="245.0" prefHeight="31.0" prefWidth="208.0" promptText="Password" unFocusColor="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="address" focusColor="#ffac41" layoutX="346.0" layoutY="171.0" prefHeight="31.0" prefWidth="208.0" promptText="Address" unFocusColor="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXTextField>
+            <AnchorPane fx:id="imageInput" layoutX="55.0" layoutY="162.0" prefHeight="66.0" prefWidth="208.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="72.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/imageInputField.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#ffac41" layoutX="104.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" wrappingWidth="78.6708984375">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

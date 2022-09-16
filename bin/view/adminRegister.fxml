@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminRegisterController">
+   <children>
+      <AnchorPane fx:id="mainPane" layoutX="-12.0" prefHeight="667.0" prefWidth="805.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="233.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Here" textAlignment="CENTER" wrappingWidth="319.9013671875">
+               <font>
+                  <Font name="Arial" size="38.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="68.0" fitWidth="112.0" layoutX="359.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/registerIcon.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="usernameField" focusColor="#44edff" labelFloat="true" layoutX="80.0" layoutY="168.0" prefHeight="51.0" prefWidth="235.0" promptText="Username" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nrcField" focusColor="#44edff" labelFloat="true" layoutX="477.0" layoutY="168.0" prefHeight="51.0" prefWidth="235.0" promptText="NRC" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="phoneField" focusColor="#44edff" labelFloat="true" layoutX="80.0" layoutY="264.0" prefHeight="31.0" prefWidth="235.0" promptText="PhoneNumber" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="addressField" focusColor="#44edff" labelFloat="true" layoutX="80.0" layoutY="353.0" prefHeight="31.0" prefWidth="235.0" promptText="Address" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordField" focusColor="#44edff" labelFloat="true" layoutX="477.0" layoutY="264.0" prefHeight="51.0" prefWidth="235.0" promptText="Password" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="con_passwordField" focusColor="#44edff" labelFloat="true" layoutX="477.0" layoutY="353.0" prefHeight="51.0" prefWidth="235.0" promptText="Confirm Password" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btn_cancel" buttonType="RAISED" layoutX="189.0" layoutY="572.0" prefHeight="58.0" prefWidth="135.0" style="-fx-background-color: cyan;" styleClass="main_button" text="Cancel">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btn_register" layoutX="490.0" layoutY="572.0" prefHeight="58.0" prefWidth="135.0" style="-fx-background-color: cyan;" styleClass="main_button" text="Register">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <AnchorPane layoutX="256.0" layoutY="450.0" prefHeight="68.0" prefWidth="274.0">
+               <children>
+                  <ImageView fx:id="uploadimg" fitHeight="68.0" fitWidth="87.0" layoutX="20.0" onMouseClicked="#openFileChooser" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/imageInputField.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lbl_img" layoutX="127.0" layoutY="24.0" prefHeight="31.0" prefWidth="135.0" text="Upload Image" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

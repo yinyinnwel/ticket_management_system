@@ -1,0 +1,51 @@
+.main_color{
+	-fx-font-family: 'Alice', serif;
+-fx-font-family: 'Merriweather', serif;
+}
+
+.main_button{
+	
+	-fx-border-radius:10px;
+	-fx-background-radius:10px;
+	
+}
+
+.button_color:hover{
+	-fx-border-color: #b39ddb ;
+	-fx-text-fill:#b39ddb ;
+	-fx-background-color:#060608;
+	
+}
+
+.button_color2:hover{
+	-fx-border-color: #b39ddb ;
+	-fx-text-fill:#b39ddb ;
+	-fx-background-color:#000000;
+	
+}
+
+.admin_button_color:hover{
+	-fx-border-radius:10px;
+	-fx-border-color: #b39ddb ;
+	-fx-text-fill:#000000 ;
+	-fx-background-color:#522e24;
+}
+
+.admin_image{
+	-fx-background-image:url('../view/images/logo.jpg');
+	-fx-background-size:100%;
+}
+
+.table{
+	-fx-background-color: #fff3e1;
+}
+
+.seller_button_color:hover{
+	-fx-border-radius:10px;
+	-fx-border-color: #b39ddb ;
+	-fx-text-fill:#000000 ;
+	-fx-background-color:#857671;
+}
+
+
+

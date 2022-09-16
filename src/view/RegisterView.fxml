@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1635.0" style="-fx-background-color: #071c21;" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterViewController">
+   <children>
+      <HBox prefHeight="68.0" prefWidth="1635.0">
+         <children>
+            <JFXTextField fx:id="searchField" focusColor="GOLD" prefHeight="54.0" prefWidth="244.0" promptText="Search" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollPane" layoutX="532.0" layoutY="68.0" prefHeight="769.0" prefWidth="1103.0">
+         <content>
+            <TableView fx:id="tableView" prefHeight="852.0" prefWidth="1306.0" style="-fx-background-color: gray;">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="70.0" text="ID" />
+                <TableColumn fx:id="col_name" prefWidth="100.0" text="Name" />
+                  <TableColumn fx:id="col_nrc" prefWidth="200.0" text="Nrc" />
+                  <TableColumn fx:id="col_phone" prefWidth="150.0" text="Phone" />
+                  <TableColumn fx:id="col_address" prefWidth="100.0" text="Address" />
+                  <TableColumn fx:id="col_password" prefWidth="100.0" text="Password" />
+                  <TableColumn fx:id="col_image" prefWidth="125.0" text="Image" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <JFXTextField fx:id="usernameField" focusColor="GOLD" labelFloat="true" layoutX="57.0" layoutY="186.0" prefHeight="51.0" prefWidth="324.0" promptText="Name" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="phoneField" focusColor="GOLD" labelFloat="true" layoutX="57.0" layoutY="358.0" prefHeight="51.0" prefWidth="324.0" promptText="Phone Number" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="nrcField" focusColor="GOLD" labelFloat="true" layoutX="57.0" layoutY="270.0" prefHeight="51.0" prefWidth="324.0" promptText="NRC" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="addressField" focusColor="GOLD" labelFloat="true" layoutX="57.0" layoutY="445.0" prefHeight="51.0" prefWidth="324.0" promptText="Address" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <Text fill="GOLD" fontSmoothingType="LCD" layoutX="183.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" textAlignment="CENTER" wrappingWidth="170.6708984375">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btn_update" buttonType="RAISED" layoutX="87.0" layoutY="748.0" prefHeight="51.0" prefWidth="132.0" style="-fx-background-color: #50c4ed;" styleClass="main_button" text="Update" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btn_delete" buttonType="RAISED" layoutX="256.0" layoutY="748.0" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: red;" styleClass="main_button" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <HBox layoutX="57.0" layoutY="629.0" prefHeight="68.0" prefWidth="324.0">
+         <children>
+            <ImageView fx:id="uploadImage" fitHeight="61.0" fitWidth="281.0" onMouseClicked="#openFileChooser" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/imageInputField.png" />
+               </image>
+            </ImageView>
+            <Text fill="GOLD" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload_Image" textAlignment="CENTER" wrappingWidth="144.7080078125">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <JFXPasswordField fx:id="passwordField" focusColor="GOLD" labelFloat="true" layoutX="57.0" layoutY="538.0" prefHeight="51.0" prefWidth="324.0" promptText="Password" style="-fx-text-inner-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

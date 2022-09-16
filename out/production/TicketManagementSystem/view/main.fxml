@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="681.0" styleClass="main" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreenViewController">
+	<children>
+		<Label alignment="CENTER" layoutX="104.0" layoutY="34.0" prefHeight="86.0" prefWidth="474.0" text="Ticket Management System" textFill="#ff1e56">
+			<font>
+				<Font name="System Bold" size="36.0" />
+			</font>
+			<effect>
+				<Glow level="1.0" />
+			</effect>
+		</Label>
+		<AnchorPane fx:id="admin" layoutX="229.0" layoutY="120.0" onMouseClicked="#onChoseAdmin" prefHeight="116.0" prefWidth="210.0" styleClass="main__admin">
+			<children>
+				<ImageView fitHeight="70.0" fitWidth="88.0" layoutX="70.0" layoutY="14.0">
+					<image>
+						<Image url="@images/admin.png" />
+					</image>
+				</ImageView>
+				<Label alignment="CENTER" layoutX="40.0" layoutY="81.0" prefHeight="35.0" prefWidth="131.0" text="Admin" textFill="#ff1e56">
+					<font>
+						<Font name="System Bold" size="24.0" />
+					</font>
+				</Label>
+			</children>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</AnchorPane>
+		<AnchorPane fx:id="seller" layoutX="229.0" layoutY="282.0" onMouseClicked="#onChoseSeller" prefHeight="116.0" prefWidth="210.0" styleClass="main__admin">
+			<children>
+				<Label alignment="CENTER" layoutX="40.0" layoutY="81.0" prefHeight="35.0" prefWidth="131.0" text="Seller" textFill="#ff1e56">
+					<font>
+						<Font name="System Bold" size="24.0" />
+					</font>
+				</Label>
+				<ImageView fitHeight="62.0" fitWidth="67.0" layoutX="72.0" layoutY="14.0">
+					<image>
+						<Image url="@images/seller.png" />
+					</image>
+				</ImageView>
+			</children>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</AnchorPane>
+	</children>
+</AnchorPane>
